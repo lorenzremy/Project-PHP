@@ -1,0 +1,163 @@
+li{
+    list-style:none;
+}
+
+label{
+    color:gray;
+    font-size:0.8em;
+}
+
+#instalogo{
+    width:200px;
+    margin-left:30px;
+    padding-top:20px;
+    
+}
+
+#instaheader{
+    width:120px;
+    padding-top:10px;
+    margin-left:-5px;
+}
+
+.header{
+    height:50px;
+    background-color:#326086;
+}
+
+.innerheader{
+    display:block;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input{
+    padding:5px 50px 5px 2px;
+}
+
+body{
+    font-family: 'roboto', 'helvetica';
+    background-color:aliceblue;
+}
+
+#submitbtn{
+    background-color:#326086;
+    width:198px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    border:none;
+    font-weight:bold;
+    color:white;
+    
+}
+
+.inner{
+    display:block;
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    padding:5px 25px 5px 0px;
+    
+}
+
+.block{
+    display:block;
+    
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+h3{
+    margin-left:40px;
+    color:gray;
+}
+
+#register{
+    text-decoration:none;
+    font-size:0.7em;
+    margin-left:15px;
+    
+}
+
+.errormessages{
+    font-size:0.8em;
+    color:red;
+}
+
+.dropbtn {
+    display:inline;
+    background-color:#326086;
+    color: white;
+    padding: 10px 0px 10px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top:-1px;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#326086;
+    min-width: 150px;
+    margin-left:-100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top:-2px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    font-size:0.8em;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #326086;
+
+}
+
+.dropdown-content a:hover {
+    color: gray;
+    
+}
+
+#usericon{
+    width:28px;
+}
+
+.registered{
+    width:500px;
+    margin-left:-20px;
+    font-size:1.2em;
+    color:#326086;
+}
+
+.loginredirect{
+    margin-left:-20px;
+    text-decoration:none;
+}
