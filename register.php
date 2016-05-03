@@ -90,6 +90,7 @@ if(isset($_GET['success']) && empty ($_GET['success'])){
             <input type="text" id="email" name="email">
         </li>
         <li><button type="submit" id="submitbtn">Register</button> </li>
+        <a href="index.php" id="goback">Go to login page.</a>
     </ul>
 </form>
 </div>
