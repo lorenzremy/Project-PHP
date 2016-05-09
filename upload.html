@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            text-align: center;
+            font-size: 23px;
+            color:darkred;
+            font-family: fantasy;
+        }
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 700px;
+        }
+        div{
+            text-align: center;
+        }
+        .button{
+            background-color: black;
+            color: ghostwhite;
+            padding-bottom: 20px;
+            
+        }
+    </style>
+</head>
+    
+<body>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <p>Select image to upload:</p>
+    <div>
+        <input type="file" name="fileToUpload" id="fileToUpload"><br>
+        <input type="submit" value="Upload Image" name="submit" id="button">
+    </div>
+</form>
+
+</body>
+</html> 
+
+
+
+{}
