@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Imdstagram</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="javascript/showmore.js"></script>
 
-</head>
-<body>
 <div class="header">
 <div class="innerheader">
 <img id="instaheader" src="images/Instagramlogo.png" alt="instagram logo">
@@ -26,11 +13,12 @@
 </div>
 </div>
 
-<body>
+
    
    <?php
 //include database configuration file
 include('db_config.php');
+
 ?>
     
     <div class="container">
@@ -40,10 +28,10 @@ include('db_config.php');
             <div class="tutorial_list">
 			<?php
 			//get rows query
-			$query = mysqli_query($con, "SELECT * FROM tutorials ORDER BY created DESC LIMIT 2");
+			$query = mysqli_query($con, "SELECT * FROM tutorials ORDER BY id DESC LIMIT 2");
 			
 			//number of rows
-			$rowCount = mysqli_num_rows($query);
+			$rowCount = pdo_num_rows($query);
 			
 			if($rowCount > 0){ 
 				while($row = mysqli_fetch_assoc($query)){ 
@@ -51,7 +39,7 @@ include('db_config.php');
             ?>
            	 	<div class="list_item">
            	 	    <a href="javascript:void(0);"><h2><?php echo $row['title']; ?></h2></a>
-                    <p><?php echo $row[imglocation]; ?></p>
+                    <img src="<?php echo $row['imglocation']; ?>" alt="afbeelding"/>
            	 	</div>
             <?php } ?>
             <div class="show_more_main" id="show_more_main<?php echo $tutorial_id; ?>">
@@ -65,6 +53,4 @@ include('db_config.php');
     
 </div>
     
-</body>
-</body>
-</html>  
+

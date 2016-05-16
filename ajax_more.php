@@ -20,7 +20,10 @@ $rowCount = mysqli_num_rows($query);
 if($rowCount > 0){ 
     while($row = mysqli_fetch_assoc($query)){ 
         $tutorial_id = $row["id"]; ?>
-        <div class="list_item"><a href="javascript:void(0);"><h2><?php echo $row["title"]; ?></h2></a></div>
+        <div class="list_item">
+            <a href="javascript:void(0);"><h2><?php echo $row["title"]; ?></h2></a>
+            <img src="<?php echo $row['imglocation']; ?>" alt="afbeelding"/>
+        </div>
 <?php } ?>
 <?php if($allRows > $showLimit){ ?>
     <div class="show_more_main" id="show_more_main<?php echo $tutorial_id; ?>">

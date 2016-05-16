@@ -173,9 +173,19 @@ padding: 1px 12px;
 background-color:#F1F1F1;
 -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    z-index: 1;
 }
 div.list_item {
 margin: 5px 15px 2px;
+}
+
+div.list_item img{
+    height: 650px;
+    width: 650px;
+    display: block;
+    z-index: 10;    
+    visibility: visible;
+    
 }
 div.list_item p {
 margin: .5em 0;
